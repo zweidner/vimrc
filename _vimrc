@@ -14,8 +14,8 @@ set mouse-=a
 "set up color scheme
 "************************************
 set background=dark
-colorscheme solarized
-let g:solarized_underline=0
+set t_Co=256
+colorscheme badwolf
 
 "************************************
 "set up my maps
@@ -40,8 +40,10 @@ noremap <S-Tab> <Esc>gt
 noremap <C-t> :tabe<Space>
 noremap <Tab> <C-w><C-w>
 
-nnoremap <C-h> <C-a>
-nnoremap <C-m> <C-x>
+nnoremap <C-s> <Left>
+nnoremap <C-h> <Up>
+nnoremap <C-t> <Right>
+nnoremap <C-m> <Down>
 
 "open/close code folds
 nnoremap <Space> za
