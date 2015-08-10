@@ -13,9 +13,10 @@ set mouse-=a
 "************************************
 "set up color scheme
 "************************************
-set background=dark
 set t_Co=256
+set background=dark
 colorscheme badwolf
+let g:solarized_underline=0
 
 "************************************
 "set up my maps
@@ -40,10 +41,13 @@ noremap <S-Tab> <Esc>gt
 noremap <C-t> :tabe<Space>
 noremap <Tab> <C-w><C-w>
 
-nnoremap <C-s> <Left>
-nnoremap <C-h> <Up>
-nnoremap <C-t> <Right>
-nnoremap <C-m> <Down>
+inoremap <C-s> <Left>
+inoremap <C-h> <Up>
+inoremap <C-t> <Right>
+inoremap <C-m> <Down>
+
+nnoremap <C-9> :tag<Enter>
+nnoremap <C-0> :pop<Enter>
 
 "open/close code folds
 nnoremap <Space> za
@@ -51,9 +55,10 @@ nnoremap <Space> za
 "close all folds
 nnoremap <leader><Space> zM
 
+nnoremap <leader>n :set nu!<CR>
+
 "bbb to escape from insert mode
 inoremap bbb <Esc>
-
 
 "increment and decrement
 nnoremap + <C-a>
@@ -73,7 +78,7 @@ set hlsearch "highlight searches
 set incsearch "search before hitting enter
 set number "show line nums
 set hidden "hide buffers instead of forcing closed
-set expandtab "tab inserts spaces
+"set expandtab "tab inserts spaces
 set tabstop=2 "2 spaces for tab
 set autoindent "smart autoindent
 set shiftround "shift tabs to rounded tabstops
@@ -117,34 +122,4 @@ let g:airline_powerline_fonts=1
 
 set laststatus=2
 set encoding=utf8
-
-
-"************************************
-"set up digraphs (why not?)
-"************************************
-" Digraphs
-" Alpha
-imap <c-l><c-a> <c-k>a*
-" Beta
-imap <c-l><c-b> <c-k>b*
-" Gamma
-imap <c-l><c-g> <c-k>g*
-" Delta
-imap <c-l><c-d> <c-k>d*
-" Epslion
-imap <c-l><c-e> <c-k>e*
-" Lambda
-imap <c-l><c-l> <c-k>l*
-" Eta
-imap <c-l><c-y> <c-k>y*
-" Theta
-imap <c-l><c-h> <c-k>h*
-" Mu
-imap <c-l><c-m> <c-k>m*
-" Rho
-imap <c-l><c-r> <c-k>r*
-" Pi
-imap <c-l><c-p> <c-k>p*
-" Phi
-imap <c-l><c-f> <c-k>f*
 
