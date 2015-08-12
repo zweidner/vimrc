@@ -67,8 +67,11 @@ nnoremap - <C-x>
 "clear search highlights
 noremap <silent><Leader>/ :nohls<CR>
 
-"delete whitespacm
+"delete whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
+
+"maybe fix some tmux woes?
+inoremap <CR> <C-j>
 
 "************************************
 "set up my options
