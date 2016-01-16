@@ -63,6 +63,10 @@ inoremap bbb <Esc>
 ".. to ->
 inoremap ,. ->
 
+"saving in insert mode still saves
+inoremap ;w <Esc>:w
+inoremap ;q <Esc>:q
+
 "increment and decrement
 nnoremap + <C-a>
 nnoremap - <C-x>
