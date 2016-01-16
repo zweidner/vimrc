@@ -60,6 +60,9 @@ nnoremap <leader>n :set nu!<CR>
 "bbb to escape from insert mode
 inoremap bbb <Esc>
 
+".. to ->
+inoremap ,. ->
+
 "increment and decrement
 nnoremap + <C-a>
 nnoremap - <C-x>
