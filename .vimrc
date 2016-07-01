@@ -80,6 +80,9 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
 "maybe fix some tmux woes?
 inoremap <CR> <C-j>
 
+"dig into tags
+nnoremap <C-]> <C-w><C-]>
+
 "************************************
 "set up my options
 "************************************
@@ -133,3 +136,4 @@ let g:airline_powerline_fonts=1
 set laststatus=2
 set encoding=utf8
 
+set tags=~/.vim/tags/hubzero
