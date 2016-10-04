@@ -15,7 +15,7 @@ set mouse-=a
 "************************************
 set t_Co=256
 set background=dark
-colorscheme badwolf
+colorscheme tomorrow-night-eighties
 let g:solarized_underline=0
 
 "************************************
