@@ -15,8 +15,7 @@ set mouse-=a
 "************************************
 set t_Co=256
 set background=dark
-colorscheme tomorrow-night-eighties
-let g:solarized_underline=0
+colorscheme Tomorrow-Night-Eighties
 
 "************************************
 "set up my maps
@@ -60,8 +59,11 @@ nnoremap <leader>n :set nu!<CR>
 "bbb to escape from insert mode
 inoremap bbb <Esc>
 
-".. to ->
+",. to ->
 inoremap ,. ->
+
+",. to ->
+inoremap ,/ =>
 
 "saving in insert mode still saves
 inoremap ;w <Esc>:w
