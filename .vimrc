@@ -1,3 +1,31 @@
+"
+"                         ███████████████████████████
+"                         ███████▀▀▀░░░░░░░▀▀▀███████
+"                         ████▀░░░░░░░░░░░░░░░░░▀████
+"                         ███│░░░░░░░░░░░░░░░░░░░│███
+"                         ██▌│░░░░░░░░░░░░░░░░░░░│▐██
+"                         ██░└┐░░░░░░░░░░░░░░░░░┌┘░██
+"                         ██░░└┐░░░░░░░░░░░░░░░┌┘░░██
+"                         ██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██
+"                         ██▌░│██████▌░░░▐██████│░▐██
+"                         ███░│▐███▀▀░░▄░░▀▀███▌│░███
+"                         ██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██
+"                         ██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██
+"                         ████▄─┘██▌░░░░░░░▐██└─▄████
+"                         █████░░▐█─┬┬┬┬┬┬┬─█▌░░█████
+"                         ████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████
+"                         █████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████
+"                         ███████▄░░░░░░░░░░░▄███████
+"                         ██████████▄▄▄▄▄▄▄██████████
+"                         ███████████████████████████
+"
+"   You are about to experience a potent dosage of Vim. Watch your steps.
+"
+"                ╔══════════════════════════════════════════╗
+"                ║           ⎋ HERE BE VIMPIRES ⎋           ║
+"                ╚══════════════════════════════════════════╝
+
+
 "************************************
 "General vim options
 "************************************
@@ -35,6 +63,16 @@ noremap <S-m> <C-d>
 noremap <S-s> <C-Left>
 noremap <S-t> <C-Right>
 
+"resize panes
+noremap <leader>h :resize +5<Enter>
+noremap <leader>m :resize -5<Enter>
+noremap <leader>t :vertical resize +5<Enter>
+noremap <leader>s :vertical resize -5<Enter>
+noremap <leader>H :resize +25<Enter>
+noremap <leadertM :resize -25<Enter>
+noremap <leader>T :vertical resize +25<Enter>
+noremap <leader>S :vertical resize -25<Enter>
+
 inoremap <S-Tab> <Esc>gt
 noremap <S-Tab> <Esc>gt
 noremap <C-t> :tabe<Space>
@@ -55,6 +93,8 @@ nnoremap <Space> za
 nnoremap <leader><Space> zM
 
 nnoremap <leader>n :set nu!<CR>
+
+nnoremap <leader>b :ls<CR>:b<Space>
 
 "bbb to escape from insert mode
 inoremap bbb <Esc>
@@ -116,6 +156,8 @@ set foldenable "turn on code folding
 
 set splitright splitbelow "new splits to right and below
 
+set nowrap "turn line wrapping off
+
 "************************************
 "set up some bits for airline to work
 "************************************
@@ -139,3 +181,4 @@ set laststatus=2
 set encoding=utf8
 
 set tags=~/.vim/tags/hubzero
+
