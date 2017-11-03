@@ -96,6 +96,12 @@ nnoremap <leader>n :set nu!<CR>
 
 nnoremap <leader>b :ls<CR>:b<Space>
 
+"get to ex mode with -E, not the visual mode
+nnoremap Q <nop>
+
+"disable q: bind for command history, use :,ctrl-f
+nnoremap q: <nop>
+
 "bbb to escape from insert mode
 inoremap bbb <Esc>
 
