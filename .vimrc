@@ -157,8 +157,8 @@ set autoread "reread files that have changed on disk
 set synmaxcol=1024 "syntax coloring on long lines sucks
 set cursorline "highlight the current line
 
-set foldmethod=syntax "set code folding to syntax style
-set foldenable "turn on code folding
+"set foldmethod=syntax "set code folding to syntax style
+"set foldenable "turn on code folding
 
 set splitright splitbelow "new splits to right and below
 
