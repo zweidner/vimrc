@@ -138,7 +138,8 @@ set incsearch "search before hitting enter
 set number "show line nums
 set hidden "hide buffers instead of forcing closed
 "set expandtab "tab inserts spaces
-set tabstop=2 "2 spaces for tab
+set tabstop=1 "2 spaces for tab
+set shiftwidth=1
 set autoindent "smart autoindent
 set shiftround "shift tabs to rounded tabstops
 "set showmatch "show matching parentheses
@@ -184,5 +185,5 @@ let g:airline_powerline_fonts=1
 set laststatus=2
 set encoding=utf8
 
-set tags=~/.vim/tags/hubzero
-
+filetype plugin indent on
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
